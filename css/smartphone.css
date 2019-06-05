@@ -1,0 +1,18 @@
+
+
+.nav-left {
+  left: 10px;
+  top: 10px;
+}
+.nav-right {
+  top: 0;
+  right: 0;
+  width: auto;
+}
+.nav-right .fa-facebook-f {
+  padding: 10px 16px;
+}
+.nav-right .fa-github-square {
+  padding: 10px;
+  margin-left: -5px;
+}
