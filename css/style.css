@@ -1,14 +1,14 @@
 
 body {
-  background-color: #2C2C2C;
-  color: #fff;
+  background-color: #f5dec0;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .container {
   z-index: 1;
   width: 92%;
   max-width: 1160px;
-  margin: 120px auto 0;
+  margin: 0 auto;
 }
 /*---------------------------------
 * 左右 固定nav
@@ -17,8 +17,8 @@ body {
 .nav-left {
   position: fixed;
   z-index: 10;
-  left: 40px;
-  top: 40px;
+  left: 10px;
+  top: 10px;
   width: 40px;
 }
 .nav-left .fa-cat {
@@ -28,9 +28,9 @@ body {
 .nav-right {
   position: fixed;
   z-index: 10;
-  top: 40px;
-  right: 0;
-  width: 46px;
+top: 0;
+right: 0;
+width: auto;
 }
 .nav-right .fab {
   font-size: 32px;
@@ -41,18 +41,90 @@ body {
 .nav-right .fa-facebook-f {
   background-color: #3B5998;
   color: #fff;
-  padding: 40px 15px;
+  padding: 10px 16px;
 }
 /* github */
 .nav-right .fa-github-square {
   background-color: #64676D;
   color: #fff;
-  padding: 40px 9px;
+  padding: 10px;
+  margin-left: -5px;
 }
 
+/*  吹き出し */
+.balloon {
+  position: sticky;
+  top: 0;
+  display: inline-block;
+  margin: 0  0 40px;
+  padding: 15px 0px;
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  background: #313131;
+  letter-spacing: 11px;
+  text-align: center;
+}
+/*
+.balloon:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #313131;
+}
+*/
+.balloon-left {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 17px 30px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #ffffff;
+  border-radius: 20px
+}
+.balloon-left:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #ffffff;
+}
+.balloon1-left p {
+  margin: 0;
+  padding: 0;
+}
+/*---------------------------------
+* Prof
+---------------------------------*/
+#prof {
+    margin: 117px 0 49px;
+}
+.prof-body {
+  display: flex;
+}
+.prof-left {
+  width: 50%;
+}
+.prof-left img {
+  width: 100%;
+}
+.prof-right {
+  line-height: 2;
+}
 /*---------------------------------
 * Webサイト一覧
 ---------------------------------*/
+#work .balloon {
+    margin-bottom: 67px;
+}
 .row {
   display: flex;
   justify-content: space-between;
@@ -92,6 +164,7 @@ body {
 #codepen {
   margin: 150px 0;
 }
+/*
 #codepen h2 {
   font-size: 40px;
   text-align: center;
@@ -100,6 +173,7 @@ body {
   border-bottom: 3px dashed #fb7212;
   padding-bottom: 5px;
 }
+*/
 .fa-broom:before {
   position: absolute;
   margin-left: -30px;

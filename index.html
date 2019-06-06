@@ -5,25 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Portfolio | ZaizenSaki</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="only screen and (max-device-width:640px)" href="css/smartphone.css"/>
   </head>
   <body>
-    
+        
     <!-- nav -->
     <section>
-      <div class="nav-left"><i class="fas fa-cat"></i></div><!-- cat -->
+      <div class="nav-left">
+        <!-- <i class="fas fa-cat"></i> -->
+      </div><!-- cat -->
       <div class="nav-right">
         <a href="#"><i class="fab fa-facebook-f faa-horizontal animated-hover"></i></a>
         <a href="#"><i class="fab fa-github-square faa-horizontal animated-hover"></i></a>
       </div>
     </section>
     
-    <div class="container">
+    <div>
+      
+      <!-- prof -->
+      <section id="prof">
+        <div class="container prof-body">
+          <div class="prof-left"><img src="image/prof.png" alt="saki"></div>
+          <div class="prof-right balloon-left">
+            <p>
+            福岡出身、東京在住のさきちょです。<br>
+      			現在はWebサイトの作成に興味があり、勉強をしています。<br>
+      		  また、同世代コミュニティ「Enclass」に所属しており、たまにイベントや勉強会をしています。
+            </p>
+          </div>
+        </div>
+      </section>    
+          
       <!-- work -->
-      <section>
+      <section id="work">
+        <h2 class="balloon">
+          <p>制作実績</p>
+        </h2>
+        <div class="container">
         <div class="row">
           <div class="work-pc">
             <a href="https://systems.pasonatech.co.jp/" target="_blank">
@@ -88,10 +110,17 @@
             </div> 
           </div>
         </div>
+        </div>
       </section>
       <!-- codepen -->
       <section id="codepen">
+        <!--
         <h2><span>Code</span>pen<i class="fas fa-broom"></i></h2>
+        -->
+        <h2 class="balloon">
+          <p>Codepenで開発したもの</p>
+        </h2>
+        <div class="container">
         <div class="codepen-list">
           <iframe scrolling="no" title="wZPXpR" src="https://codepen.io/szaizen/embed/wZPXpR/?height=265&theme-id=0&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
           See the Pen <a href='https://codepen.io/szaizen/pen/wZPXpR/'>wZPXpR</a> by szaizen
@@ -116,9 +145,10 @@
           (<a href='https://codepen.io/szaizen'>@szaizen</a>) on <a href='https://codepen.io'>CodePen</a>.
           </iframe>
         </div>
-
+        </div>
       </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
